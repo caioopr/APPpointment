@@ -1,0 +1,12 @@
+### Create User
+POST http://localhost:3000/auth/signup
+content-Type: application/json
+
+{
+  "name":"jhon doe",
+  "email": "jhon@email.com",
+  "password":"password",
+  "role":"doctor",
+  "state":"alagoas",
+  "city": "maceio"
+}
