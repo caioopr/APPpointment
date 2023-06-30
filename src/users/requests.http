@@ -1,4 +1,4 @@
-### Create User
+### Create User: requires body
 POST http://localhost:3000/auth/signup
 content-Type: application/json
 
@@ -10,3 +10,18 @@ content-Type: application/json
   "state":"alagoas",
   "city": "maceio"
 }
+
+### Get user: requires id
+GET http://localhost:3000/auth/1
+
+### Update user: requires id and body
+PATCH  http://localhost:3000/auth/1
+content-Type: application/json
+
+{
+  "name":"jhon",
+  "email": "jhondoe@email.com",
+}
+
+### Delete user: requires id
+DELETE http://localhost:3000/auth/1
